@@ -25,14 +25,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = EEE9C3491219E69C000D1BDD /* UIExternalDisplay.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libUIExternalDisplay.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = UIExternalDisplay;
 		};
 		EEE9C3661219E81A000D1BDD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EEE9C3491219E69C000D1BDD /* UIExternalDisplay.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* UIExternalDisplay */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = UIExternalDisplay;
 		};
 /* End PBXContainerItemProxy section */
@@ -269,7 +269,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
 				USER_HEADER_SEARCH_PATHS = "../UIExternalDisplay/**";

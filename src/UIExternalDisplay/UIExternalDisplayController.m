@@ -13,8 +13,10 @@
 @synthesize delegate;
 @synthesize maxScreenMode;
 @synthesize queue;
+
 -(id) init{
 	maxScreenMode = nil;
+	self.queue = [[NSMutableArray alloc] init];
 	[self setMaxMode];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayConnect:) name:@"UIScreenDidConnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayDisconnect:) name:@"UIScreenDidDisconnectNotification" object:nil];
@@ -83,7 +85,7 @@
 }
 -(void) pushViewController:(UIViewController*) viewController {
 	
-	[queue push:viewController];
+	[self.queue push:viewController];
 	UIScreen *external = [[UIScreen screens] objectAtIndex:1];
 	external.currentMode = maxScreenMode;
 	
@@ -103,7 +105,7 @@
 }
 
 -(void) popViewController {
-	UIViewController *controller = [queue pop];
+	UIViewController *controller = [self.queue pop];
 	[controller.view removeFromSuperview];
 }
 

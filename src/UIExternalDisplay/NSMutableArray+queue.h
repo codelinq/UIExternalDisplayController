@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
-@interface NSMutableArray (queue)
+@interface NSMutableArray (QueueAdditions)
 
 -(void) push:(id) anObject;
 -(id) pop;

@@ -44,6 +44,9 @@
 	DummyViewController* c = [[DummyViewController alloc] initWithNibName:@"DummyViewController" bundle:[NSBundle mainBundle]];
 	[externalController pushViewController:c];
 }
+-(IBAction) hideDummy {
+	[externalController popViewController];
+}
 #pragma mark -
 
 /*

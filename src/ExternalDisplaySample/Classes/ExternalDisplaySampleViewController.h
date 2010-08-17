@@ -21,5 +21,6 @@
 @property (nonatomic, retain) UIExternalDisplayController* externalController;
 
 -(IBAction) showDummy;
+-(IBAction) hideDummy;
 @end
 

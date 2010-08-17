@@ -8,8 +8,7 @@
 
 #import "NSMutableArray+queue.h"
 
-
-@implementation NSMutableArray (queue)
+@implementation NSMutableArray (QueueAdditions)
 
 -(void) push:(id) anObject {
 	[self addObject:anObject];
