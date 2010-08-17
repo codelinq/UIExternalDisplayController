@@ -6,6 +6,10 @@
 		addToTargets = (
 			D2AAC07D0554694100DB518D /* UIExternalDisplay */,
 		);
+		breakpoints = (
+			EEE9C49A121A0BB4000D1BDD /* UIExternalDisplayController.m:91 */,
+			EEE9C4E4121A102C000D1BDD /* UIExternalDisplayController.m:88 */,
+		);
 		codeSenseManager = EEE9C3371219E636000D1BDD /* Code sense */;
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -13,9 +17,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					784,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -30,8 +34,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303687219;
-			PBXWorkspaceStateSaveDate = 303687219;
+			PBXPerProjectTemplateStateSaveDate = 303697612;
+			PBXWorkspaceStateSaveDate = 303697612;
+		};
+		perUserProjectItems = {
+			EEE9C486121A0845000D1BDD /* PBXTextBookmark */ = EEE9C486121A0845000D1BDD /* PBXTextBookmark */;
+			EEE9C4E8121A1038000D1BDD /* PBXTextBookmark */ = EEE9C4E8121A1038000D1BDD /* PBXTextBookmark */;
+			EEE9C513121A1328000D1BDD /* PBXTextBookmark */ = EEE9C513121A1328000D1BDD /* PBXTextBookmark */;
+			EEE9C517121A1328000D1BDD /* PBXTextBookmark */ = EEE9C517121A1328000D1BDD /* PBXTextBookmark */;
 		};
 		sourceControlManager = EEE9C3361219E636000D1BDD /* Source Control */;
 		userBuildSettings = {
@@ -56,16 +66,101 @@
 	};
 	EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 247}}";
-			sepNavSelRange = "{276, 0}";
-			sepNavVisRange = "{0, 282}";
+			sepNavIntBoundsRect = "{{0, 0}, {495, 442}}";
+			sepNavSelRange = "{732, 0}";
+			sepNavVisRange = "{0, 375}";
+			sepNavWindowFrame = "{{354, 31}, {809, 771}}";
 		};
 	};
 	EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 247}}";
-			sepNavSelRange = "{286, 0}";
-			sepNavVisRange = "{0, 308}";
+			sepNavIntBoundsRect = "{{0, 0}, {962, 1612}}";
+			sepNavSelRange = "{2612, 0}";
+			sepNavVisRange = "{2283, 690}";
+			sepNavWindowFrame = "{{84, 39}, {809, 771}}";
 		};
+	};
+	EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1150, 560}}";
+			sepNavSelRange = "{228, 184}";
+			sepNavVisRange = "{0, 419}";
+		};
+	};
+	EEE9C486121A0845000D1BDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */;
+		name = "UIExternalDisplayDelegate.h: 13";
+		rLen = 184;
+		rLoc = 228;
+		rType = 0;
+		vrLen = 419;
+		vrLoc = 0;
+	};
+	EEE9C49A121A0BB4000D1BDD /* UIExternalDisplayController.m:91 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */;
+		functionName = "-pushViewController:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 91;
+		location = ExternalDisplaySample;
+		modificationTime = 303698198.115781;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	EEE9C4E4121A102C000D1BDD /* UIExternalDisplayController.m:88 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */;
+		functionName = "-pushViewController:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 88;
+		location = ExternalDisplaySample;
+		modificationTime = 303698198.124611;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	EEE9C4E8121A1038000D1BDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */;
+		name = "UIExternalDisplayController.h: 28";
+		rLen = 0;
+		rLoc = 732;
+		rType = 0;
+		vrLen = 375;
+		vrLoc = 0;
+	};
+	EEE9C513121A1328000D1BDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */;
+		name = "UIExternalDisplayController.m: 106";
+		rLen = 0;
+		rLoc = 3394;
+		rType = 0;
+		vrLen = 484;
+		vrLoc = 2899;
+	};
+	EEE9C517121A1328000D1BDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */;
+		name = "UIExternalDisplayController.m: 87";
+		rLen = 0;
+		rLoc = 2612;
+		rType = 0;
+		vrLen = 690;
+		vrLoc = 2283;
 	};
 }

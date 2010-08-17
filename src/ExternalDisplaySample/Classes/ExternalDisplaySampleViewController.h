@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ExternalDisplaySampleViewController : UIViewController {
+#import "UIExternalDisplayController.h"
+@interface ExternalDisplaySampleViewController : UIViewController <UIExternalDisplayDelegate> {
 	UILabel* labelDisplayCount;
+	UILabel* screenDimensions;
+	UILabel* currentDimensions;
+	UIExternalDisplayController* externalController;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel* labelDisplayCount;
+@property (nonatomic, retain) IBOutlet UILabel* screenDimensions;
+@property (nonatomic, retain) IBOutlet UILabel* currentDimensions;
+@property (nonatomic, retain) UIExternalDisplayController* externalController;
+
+-(IBAction) showDummy;
 @end
 

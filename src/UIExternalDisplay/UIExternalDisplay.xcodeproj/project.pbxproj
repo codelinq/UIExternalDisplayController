@@ -12,6 +12,7 @@
 		EEE9C35E1219E6D3000D1BDD /* UIExternalDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */; };
 		EEE9C35F1219E6D3000D1BDD /* UIExternalDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */; };
 		EEE9C3911219EA1A000D1BDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE9C3901219EA1A000D1BDD /* UIKit.framework */; };
+		EEE9C3B21219F218000D1BDD /* UIExternalDisplayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalDisplayController.h; sourceTree = "<group>"; };
 		EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExternalDisplayController.m; sourceTree = "<group>"; };
 		EEE9C3901219EA1A000D1BDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalDisplayDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */,
 				EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */,
+				EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -98,6 +101,7 @@
 			files = (
 				AA747D9F0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch in Headers */,
 				EEE9C35E1219E6D3000D1BDD /* UIExternalDisplayController.h in Headers */,
+				EEE9C3B21219F218000D1BDD /* UIExternalDisplayDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
