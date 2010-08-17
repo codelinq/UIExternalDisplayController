@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "UIExternalDisplayDelegate.h"
+#import "NSMutableArray+queue.h"
 
 @interface UIExternalDisplayController : UIViewController {
 	id<UIExternalDisplayDelegate> delegate;
-	UIScreenMode* maxScreenMode;
+	UIScreenMode *maxScreenMode;
+	NSMutableArray *queue;
 }
 
 #pragma mark -
@@ -19,6 +21,7 @@
 
 @property (nonatomic, retain) id<UIExternalDisplayDelegate> delegate;
 @property (nonatomic, retain) UIScreenMode *maxScreenMode;
+@property (nonatomic, retain) NSMutableArray *queue;
 
 #pragma mark -
 #pragma mark Instance Methods
@@ -26,6 +29,7 @@
 -(NSArray*) screenModes;
 -(void) setCurrentMode:(UIScreenMode *) mode;
 -(void) pushViewController:(UIViewController*) viewController;
+-(void) popViewController;
 #pragma mark -
 #pragma mark Class Methods
 +(int) screens;

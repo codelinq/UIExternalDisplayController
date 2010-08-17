@@ -11,4 +11,15 @@
 
 @implementation NSMutableArray (queue)
 
+-(void) push:(id) anObject {
+	[self addObject:anObject];
+}
+-(id) pop {
+	id object = [self objectAtIndex:0];
+	[self removeObjectAtIndex:0];
+	return object;
+}
+-(id) peek {
+	return [self objectAtIndex:0];
+}
 @end

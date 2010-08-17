@@ -12,7 +12,7 @@
 @implementation UIExternalDisplayController
 @synthesize delegate;
 @synthesize maxScreenMode;
-
+@synthesize queue;
 -(id) init{
 	maxScreenMode = nil;
 	[self setMaxMode];
@@ -82,18 +82,12 @@
 	}
 }
 -(void) pushViewController:(UIViewController*) viewController {
-	//TODO: DO SOMETHING WITH THIS VIEWCONTROLLER SIMILAR TO WHAT UINavigationController does
-	//TODO: Clean this all up.
 	
+	[queue push:viewController];
 	UIScreen *external = [[UIScreen screens] objectAtIndex:1];
 	external.currentMode = maxScreenMode;
 	
-	//UIWindow* window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
-	//UIWindow* window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-	//window.screen = external;
-	
 	CGPoint point = CGPointMake(0.0f, 0.0f);
-    //    CGSize size = CGSizeMake(1024.0f, 768.0f);
     CGSize size = maxScreenMode.size;
     CGRect frame = viewController.view.frame;
     frame.origin = point;
@@ -106,6 +100,11 @@
 	
     [window addSubview:viewController.view];
 	window.hidden = NO;
+}
+
+-(void) popViewController {
+	UIViewController *controller = [queue pop];
+	[controller.view removeFromSuperview];
 }
 
 #pragma mark -

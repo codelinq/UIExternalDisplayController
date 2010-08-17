@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NSMutableArray (queue) {
+@interface NSMutableArray (queue)
 
-}
+-(void) push:(id) anObject;
+-(id) pop;
+-(id) peek;
 
 @end
