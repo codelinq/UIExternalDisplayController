@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		EE99117A121B3361009712AC /* NSMutableArray+queue.h in Headers */ = {isa = PBXBuildFile; fileRef = EE991178121B3361009712AC /* NSMutableArray+queue.h */; };
+		EE99117B121B3361009712AC /* NSMutableArray+queue.m in Sources */ = {isa = PBXBuildFile; fileRef = EE991179121B3361009712AC /* NSMutableArray+queue.m */; };
 		EEE9C35E1219E6D3000D1BDD /* UIExternalDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */; };
 		EEE9C35F1219E6D3000D1BDD /* UIExternalDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */; };
 		EEE9C3911219EA1A000D1BDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE9C3901219EA1A000D1BDD /* UIKit.framework */; };
@@ -19,6 +21,8 @@
 		AA747D9E0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalDisplay_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libUIExternalDisplay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIExternalDisplay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE991178121B3361009712AC /* NSMutableArray+queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+queue.h"; sourceTree = "<group>"; };
+		EE991179121B3361009712AC /* NSMutableArray+queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+queue.m"; sourceTree = "<group>"; };
 		EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalDisplayController.h; sourceTree = "<group>"; };
 		EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExternalDisplayController.m; sourceTree = "<group>"; };
 		EEE9C3901219EA1A000D1BDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -73,6 +77,8 @@
 				EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */,
 				EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */,
 				EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */,
+				EE991178121B3361009712AC /* NSMutableArray+queue.h */,
+				EE991179121B3361009712AC /* NSMutableArray+queue.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 				AA747D9F0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch in Headers */,
 				EEE9C35E1219E6D3000D1BDD /* UIExternalDisplayController.h in Headers */,
 				EEE9C3B21219F218000D1BDD /* UIExternalDisplayDelegate.h in Headers */,
+				EE99117A121B3361009712AC /* NSMutableArray+queue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE9C35F1219E6D3000D1BDD /* UIExternalDisplayController.m in Sources */,
+				EE99117B121B3361009712AC /* NSMutableArray+queue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
