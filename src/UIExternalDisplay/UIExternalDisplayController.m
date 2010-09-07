@@ -28,6 +28,11 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayConnect:) name:@"UIScreenDidConnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayDisconnect:) name:@"UIScreenDidDisconnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayChanged:) name:@"UIScreenModeDidChangeNotification" object:nil];
+	
+	baseView = [[UIView alloc] init];
+	baseView.backgroundColor = [UIColor blueColor];
+	[self resizeView:baseView];
+	[window addSubview:baseView];
 	return self;
 }
 

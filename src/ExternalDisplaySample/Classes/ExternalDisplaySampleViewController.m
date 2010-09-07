@@ -36,7 +36,7 @@
 	}
 	self.currentDimensions.text = [NSString stringWithFormat:@"%.0f x %.0f", screen.currentMode.size.width, screen.currentMode.size.height];
 	self.screenDimensions.text = [NSString stringWithFormat:@"%.0f x %.0f",externalController.maxScreenMode.size.width, externalController.maxScreenMode.size.height];
-	[externalController pushViewController:backViewController withAutoScale:YES];
+	//[externalController pushViewController:backViewController withAutoScale:YES];
 }
 
 #pragma mark -
