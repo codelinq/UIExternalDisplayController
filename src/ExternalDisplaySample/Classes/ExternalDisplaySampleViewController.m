@@ -14,7 +14,6 @@
 @synthesize externalController;
 @synthesize screenDimensions;
 @synthesize currentDimensions;
-@synthesize backViewController;
 
 #pragma mark -
 #pragma mark UIExternalDisplayDelegate
@@ -36,7 +35,6 @@
 	}
 	self.currentDimensions.text = [NSString stringWithFormat:@"%.0f x %.0f", screen.currentMode.size.width, screen.currentMode.size.height];
 	self.screenDimensions.text = [NSString stringWithFormat:@"%.0f x %.0f",externalController.maxScreenMode.size.width, externalController.maxScreenMode.size.height];
-	//[externalController pushViewController:backViewController withAutoScale:YES];
 }
 
 #pragma mark -
@@ -71,8 +69,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	self.backViewController = [[BlackViewController alloc] initWithNibName:@"BlackViewController" bundle:[NSBundle mainBundle]];
-    self.externalController.delegate = self;
+	self.externalController.delegate = self;
 	if ([[UIScreen screens] count] > 1){
 		[self updateScreenInfo:[[UIScreen screens] objectAtIndex:1]];
 	}
