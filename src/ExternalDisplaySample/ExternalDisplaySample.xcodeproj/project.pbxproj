@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* ExternalDisplaySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* ExternalDisplaySampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* ExternalDisplaySampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */; };
+		EE49948412369A4200DECA20 /* BlackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE49948212369A4200DECA20 /* BlackViewController.m */; };
+		EE49948512369A4200DECA20 /* BlackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE49948312369A4200DECA20 /* BlackViewController.xib */; };
 		EEE9C37A1219E865000D1BDD /* libUIExternalDisplay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE9C34E1219E69C000D1BDD /* libUIExternalDisplay.a */; };
 		EEE9C48D121A094D000D1BDD /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9C48B121A094D000D1BDD /* DummyViewController.m */; };
 		EEE9C48E121A094D000D1BDD /* DummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9C48C121A094D000D1BDD /* DummyViewController.xib */; };
@@ -51,6 +53,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ExternalDisplaySample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalDisplaySample_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ExternalDisplaySample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExternalDisplaySample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EE49948112369A4200DECA20 /* BlackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackViewController.h; sourceTree = "<group>"; };
+		EE49948212369A4200DECA20 /* BlackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackViewController.m; sourceTree = "<group>"; };
+		EE49948312369A4200DECA20 /* BlackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BlackViewController.xib; path = Classes/BlackViewController.xib; sourceTree = "<group>"; };
 		EEE9C3491219E69C000D1BDD /* UIExternalDisplay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIExternalDisplay.xcodeproj; path = ../UIExternalDisplay/UIExternalDisplay.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EEE9C48A121A094D000D1BDD /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyViewController.h; sourceTree = "<group>"; };
 		EEE9C48B121A094D000D1BDD /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
@@ -81,6 +86,8 @@
 				28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */,
 				EEE9C48A121A094D000D1BDD /* DummyViewController.h */,
 				EEE9C48B121A094D000D1BDD /* DummyViewController.m */,
+				EE49948112369A4200DECA20 /* BlackViewController.h */,
+				EE49948212369A4200DECA20 /* BlackViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EE49948312369A4200DECA20 /* BlackViewController.xib */,
 				EEE9C48C121A094D000D1BDD /* DummyViewController.xib */,
 				2899E5210DE3E06400AC0155 /* ExternalDisplaySampleViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -206,6 +214,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* ExternalDisplaySampleViewController.xib in Resources */,
 				EEE9C48E121A094D000D1BDD /* DummyViewController.xib in Resources */,
+				EE49948512369A4200DECA20 /* BlackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +229,7 @@
 				1D3623260D0F684500981E51 /* ExternalDisplaySampleAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* ExternalDisplaySampleViewController.m in Sources */,
 				EEE9C48D121A094D000D1BDD /* DummyViewController.m in Sources */,
+				EE49948412369A4200DECA20 /* BlackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

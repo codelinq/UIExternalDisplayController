@@ -40,7 +40,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					784,
+					827,
 					20,
 					48,
 					43,
@@ -57,8 +57,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303864848;
-			PBXWorkspaceStateSaveDate = 303864848;
+			PBXPerProjectTemplateStateSaveDate = 305568597;
+			PBXWorkspaceStateSaveDate = 305568597;
 		};
 		perUserProjectItems = {
 			EE30D518121B45B000DF16B2 = EE30D518121B45B000DF16B2 /* PBXTextBookmark */;
@@ -67,6 +67,9 @@
 			EE30D51B121B45B000DF16B2 = EE30D51B121B45B000DF16B2 /* PBXTextBookmark */;
 			EE30D51C121B45B000DF16B2 = EE30D51C121B45B000DF16B2 /* PBXTextBookmark */;
 			EE30D541121B472000DF16B2 = EE30D541121B472000DF16B2 /* PBXTextBookmark */;
+			EE49949612369B6800DECA20 /* PBXTextBookmark */ = EE49949612369B6800DECA20 /* PBXTextBookmark */;
+			EE49949712369B6800DECA20 /* PBXTextBookmark */ = EE49949712369B6800DECA20 /* PBXTextBookmark */;
+			EE49949812369B6800DECA20 /* PBXTextBookmark */ = EE49949812369B6800DECA20 /* PBXTextBookmark */;
 		};
 		sourceControlManager = EEE9C3361219E636000D1BDD /* Source Control */;
 		userBuildSettings = {
@@ -151,6 +154,36 @@
 		vrLen = 716;
 		vrLoc = 208;
 	};
+	EE49949612369B6800DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEB516AE121C9CA90029BE7C /* UIBaseViewController.m */;
+		name = "UIBaseViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1104;
+		vrLoc = 0;
+	};
+	EE49949712369B6800DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEB516AD121C9CA90029BE7C /* UIBaseViewController.h */;
+		name = "UIBaseViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 249;
+		vrLoc = 0;
+	};
+	EE49949812369B6800DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EEB516AD121C9CA90029BE7C /* UIBaseViewController.h */;
+		name = "UIBaseViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 249;
+		vrLoc = 0;
+	};
 	EE991178121B3361009712AC /* NSMutableArray+queue.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {962, 234}}";
@@ -164,6 +197,32 @@
 			sepNavIntBoundsRect = "{{0, 0}, {1150, 516}}";
 			sepNavSelRange = "{192, 0}";
 			sepNavVisRange = "{0, 453}";
+		};
+	};
+	EEB516AD121C9CA90029BE7C /* UIBaseViewController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIBaseViewController.h;
+		path = /Users/sbeardsley/Work/UIExternalDisplayController/src/UIExternalDisplay/UIBaseViewController.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1005, 498}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 249}";
+		};
+	};
+	EEB516AE121C9CA90029BE7C /* UIBaseViewController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = UIBaseViewController.m;
+		path = /Users/sbeardsley/Work/UIExternalDisplayController/src/UIExternalDisplay/UIBaseViewController.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 689}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1104}";
 		};
 	};
 	EEE9C3361219E636000D1BDD /* Source Control */ = {
@@ -209,10 +268,5 @@
 		name = UIExternalDisplayController.m;
 		path = /Users/sbeardsley/Work/UIExternalDisplayController/src/UIExternalDisplay/UIExternalDisplayController.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1132, 1547}}";
-			sepNavSelRange = "{425, 20}";
-			sepNavVisRange = "{208, 702}";
-		};
 	};
 }
