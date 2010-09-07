@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "UIExternalDisplayDelegate.h"
 #import "NSMutableArray+queue.h"
-
-@interface UIExternalDisplayController : UIViewController {
+#import "UIBaseViewController.h"
+@interface UIExternalDisplayController : NSObject {
 	id<UIExternalDisplayDelegate> delegate;
 	UIScreenMode *maxScreenMode;
 	NSMutableArray *queue;
+	UIBaseViewController *baseViewController;
 }
 
 #pragma mark -
@@ -22,6 +23,7 @@
 @property (nonatomic, retain) id<UIExternalDisplayDelegate> delegate;
 @property (nonatomic, retain) UIScreenMode *maxScreenMode;
 @property (nonatomic, retain) NSMutableArray *queue;
+@property (nonatomic, retain) UIBaseViewController *baseViewController;
 
 #pragma mark -
 #pragma mark Instance Methods

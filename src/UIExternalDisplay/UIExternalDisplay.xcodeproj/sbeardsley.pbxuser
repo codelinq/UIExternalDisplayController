@@ -57,16 +57,16 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303775466;
-			PBXWorkspaceStateSaveDate = 303775466;
+			PBXPerProjectTemplateStateSaveDate = 303864848;
+			PBXWorkspaceStateSaveDate = 303864848;
 		};
 		perUserProjectItems = {
-			EE30D518121B45B000DF16B2 /* PBXTextBookmark */ = EE30D518121B45B000DF16B2 /* PBXTextBookmark */;
-			EE30D519121B45B000DF16B2 /* PBXTextBookmark */ = EE30D519121B45B000DF16B2 /* PBXTextBookmark */;
-			EE30D51A121B45B000DF16B2 /* PBXTextBookmark */ = EE30D51A121B45B000DF16B2 /* PBXTextBookmark */;
-			EE30D51B121B45B000DF16B2 /* PBXTextBookmark */ = EE30D51B121B45B000DF16B2 /* PBXTextBookmark */;
-			EE30D51C121B45B000DF16B2 /* XCBuildMessageTextBookmark */ = EE30D51C121B45B000DF16B2 /* XCBuildMessageTextBookmark */;
-			EE30D541121B472000DF16B2 /* PBXTextBookmark */ = EE30D541121B472000DF16B2 /* PBXTextBookmark */;
+			EE30D518121B45B000DF16B2 = EE30D518121B45B000DF16B2 /* PBXTextBookmark */;
+			EE30D519121B45B000DF16B2 = EE30D519121B45B000DF16B2 /* PBXTextBookmark */;
+			EE30D51A121B45B000DF16B2 = EE30D51A121B45B000DF16B2 /* PBXTextBookmark */;
+			EE30D51B121B45B000DF16B2 = EE30D51B121B45B000DF16B2 /* PBXTextBookmark */;
+			EE30D51C121B45B000DF16B2 = EE30D51C121B45B000DF16B2 /* PBXTextBookmark */;
+			EE30D541121B472000DF16B2 = EE30D541121B472000DF16B2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = EEE9C3361219E636000D1BDD /* Source Control */;
 		userBuildSettings = {
@@ -133,11 +133,10 @@
 		vrLen = 440;
 		vrLoc = 431;
 	};
-	EE30D51C121B45B000DF16B2 /* XCBuildMessageTextBookmark */ = {
+	EE30D51C121B45B000DF16B2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		comments = "'UIExternalDisplayController' may not respond to '-setMaxMode'";
 		fRef = EEE9C503121A11EB000D1BDD /* UIExternalDisplayController.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
 		rLoc = 19;
 		rType = 1;
@@ -162,9 +161,9 @@
 	};
 	EE991179121B3361009712AC /* NSMutableArray+queue.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {962, 325}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1150, 516}}";
 			sepNavSelRange = "{192, 0}";
-			sepNavVisRange = "{194, 259}";
+			sepNavVisRange = "{0, 453}";
 		};
 	};
 	EEE9C3361219E636000D1BDD /* Source Control */ = {
@@ -211,9 +210,9 @@
 		path = /Users/sbeardsley/Work/UIExternalDisplayController/src/UIExternalDisplay/UIExternalDisplayController.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1132, 1677}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 1547}}";
 			sepNavSelRange = "{425, 20}";
-			sepNavVisRange = "{208, 716}";
+			sepNavVisRange = "{208, 702}";
 		};
 	};
 }

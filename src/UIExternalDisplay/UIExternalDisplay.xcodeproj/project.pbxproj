@@ -11,6 +11,8 @@
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		EE99117A121B3361009712AC /* NSMutableArray+queue.h in Headers */ = {isa = PBXBuildFile; fileRef = EE991178121B3361009712AC /* NSMutableArray+queue.h */; };
 		EE99117B121B3361009712AC /* NSMutableArray+queue.m in Sources */ = {isa = PBXBuildFile; fileRef = EE991179121B3361009712AC /* NSMutableArray+queue.m */; };
+		EEB516B0121C9CA90029BE7C /* UIBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB516AD121C9CA90029BE7C /* UIBaseViewController.h */; };
+		EEB516B1121C9CA90029BE7C /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB516AE121C9CA90029BE7C /* UIBaseViewController.m */; };
 		EEE9C35E1219E6D3000D1BDD /* UIExternalDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */; };
 		EEE9C35F1219E6D3000D1BDD /* UIExternalDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */; };
 		EEE9C3911219EA1A000D1BDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE9C3901219EA1A000D1BDD /* UIKit.framework */; };
@@ -23,6 +25,9 @@
 		D2AAC07E0554694100DB518D /* libUIExternalDisplay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIExternalDisplay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE991178121B3361009712AC /* NSMutableArray+queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+queue.h"; sourceTree = "<group>"; };
 		EE991179121B3361009712AC /* NSMutableArray+queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+queue.m"; sourceTree = "<group>"; };
+		EEB516AD121C9CA90029BE7C /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
+		EEB516AE121C9CA90029BE7C /* UIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseViewController.m; sourceTree = "<group>"; };
+		EEB516AF121C9CA90029BE7C /* UIBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIBaseViewController.xib; sourceTree = "<group>"; };
 		EEE9C35C1219E6D3000D1BDD /* UIExternalDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalDisplayController.h; sourceTree = "<group>"; };
 		EEE9C35D1219E6D3000D1BDD /* UIExternalDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExternalDisplayController.m; sourceTree = "<group>"; };
 		EEE9C3901219EA1A000D1BDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +84,9 @@
 				EEE9C3B11219F218000D1BDD /* UIExternalDisplayDelegate.h */,
 				EE991178121B3361009712AC /* NSMutableArray+queue.h */,
 				EE991179121B3361009712AC /* NSMutableArray+queue.m */,
+				EEB516AD121C9CA90029BE7C /* UIBaseViewController.h */,
+				EEB516AE121C9CA90029BE7C /* UIBaseViewController.m */,
+				EEB516AF121C9CA90029BE7C /* UIBaseViewController.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 				EEE9C35E1219E6D3000D1BDD /* UIExternalDisplayController.h in Headers */,
 				EEE9C3B21219F218000D1BDD /* UIExternalDisplayDelegate.h in Headers */,
 				EE99117A121B3361009712AC /* NSMutableArray+queue.h in Headers */,
+				EEB516B0121C9CA90029BE7C /* UIBaseViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +166,7 @@
 			files = (
 				EEE9C35F1219E6D3000D1BDD /* UIExternalDisplayController.m in Sources */,
 				EE99117B121B3361009712AC /* NSMutableArray+queue.m in Sources */,
+				EEB516B1121C9CA90029BE7C /* UIBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
