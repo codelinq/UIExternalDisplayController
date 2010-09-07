@@ -13,11 +13,9 @@
 @synthesize delegate;
 @synthesize maxScreenMode;
 @synthesize queue;
-@synthesize baseViewController;
 -(id) init{
 	maxScreenMode = nil;
 	self.queue = [[NSMutableArray alloc] init];
-	baseViewController = [[UIBaseViewController alloc] initWithNibName:@"UIBaseViewController" bundle:[NSBundle mainBundle]];
 	[self setMaxMode];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayConnect:) name:@"UIScreenDidConnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayDisconnect:) name:@"UIScreenDidDisconnectNotification" object:nil];

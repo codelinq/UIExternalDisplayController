@@ -14,11 +14,11 @@
 	[self addObject:anObject];
 }
 -(id) pop {
-	id object = [self objectAtIndex:0];
-	[self removeObjectAtIndex:0];
+	id object = [self objectAtIndex:self.count-1];
+	[self removeObjectAtIndex:self.count-1];
 	return object;
 }
 -(id) peek {
-	return [self objectAtIndex:0];
+	return [self objectAtIndex:self.count-1];
 }
 @end
