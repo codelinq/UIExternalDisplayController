@@ -13,6 +13,8 @@
 	id<UIExternalDisplayDelegate> delegate;
 	UIScreenMode *maxScreenMode;
 	NSMutableArray *queue;
+	UIView* baseView;
+	UIWindow* window;
 }
 
 #pragma mark -
@@ -21,6 +23,8 @@
 @property (nonatomic, retain) id<UIExternalDisplayDelegate> delegate;
 @property (nonatomic, retain) UIScreenMode *maxScreenMode;
 @property (nonatomic, retain) NSMutableArray *queue;
+@property (nonatomic, retain) UIView* baseView;
+@property (nonatomic, retain) UIWindow* window;
 
 #pragma mark -
 #pragma mark Instance Methods
@@ -28,6 +32,7 @@
 -(NSArray*) screenModes;
 -(void) setCurrentMode:(UIScreenMode *) mode;
 -(void) pushViewController:(UIViewController*) viewController;
+-(void) pushViewController:(UIViewController*) viewController withAutoScale:(bool) scale;
 -(void) popViewController;
 #pragma mark -
 #pragma mark Class Methods

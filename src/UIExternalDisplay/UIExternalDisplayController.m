@@ -13,10 +13,18 @@
 @synthesize delegate;
 @synthesize maxScreenMode;
 @synthesize queue;
+@synthesize window;
+@synthesize baseView;
+
 -(id) init{
 	maxScreenMode = nil;
 	self.queue = [[NSMutableArray alloc] init];
+	self.window = [[UIWindow alloc] init];
+	window.hidden = NO;
+
 	[self setMaxMode];
+	[self setWindowSize];
+	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayConnect:) name:@"UIScreenDidConnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayDisconnect:) name:@"UIScreenDidDisconnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayChanged:) name:@"UIScreenModeDidChangeNotification" object:nil];
@@ -30,6 +38,7 @@
 		return;
 	}
 	[self setMaxMode];
+	[self setWindowSize];
 	[self.delegate externalDisplayConnect:notification.object];
 }
 
@@ -45,6 +54,7 @@
 		return;
 	}
 	[self setMaxMode];
+	[self setWindowSize];
 	[self.delegate externalDisplayChanged:notification.object withMode:[(UIScreen*)notification.object currentMode]];
 }
 
@@ -82,25 +92,36 @@
 		current.currentMode = mode;
 	}
 }
+-(void) resizeView:(UIView *) view {
+	CGPoint point = CGPointMake(0.0f, 0.0f);
+	CGSize size = maxScreenMode.size;
+	CGRect frame = view.frame;
+	frame.origin = point;
+	frame.size.width = size.width;
+	frame.size.height = size.height;
+	[view setFrame:frame];
+}
+
+-(void) pushViewController:(UIViewController*) viewController withAutoScale:(bool) scale{
+	
+	if (scale == YES){
+		[self resizeView:viewController.view];
+	}
+	
+	[self pushViewController:viewController];
+}
 -(void) pushViewController:(UIViewController*) viewController {
 	
 	[self.queue push:viewController];
+    [window addSubview:viewController.view];
+}
+
+
+
+-(void) setWindowSize {
 	UIScreen *external = [[UIScreen screens] objectAtIndex:1];
 	external.currentMode = maxScreenMode;
-	
-	CGPoint point = CGPointMake(0.0f, 0.0f);
-    CGSize size = maxScreenMode.size;
-    CGRect frame = viewController.view.frame;
-    frame.origin = point;
-    frame.size.width = size.width;
-    frame.size.height = size.height;   
-    [viewController.view setFrame:frame];
-	
-	UIWindow* window = [[UIWindow alloc] init];
-	window.screen = external;
-	
-    [window addSubview:viewController.view];
-	window.hidden = NO;
+	self.window.screen = external;
 }
 
 -(void) popViewController {

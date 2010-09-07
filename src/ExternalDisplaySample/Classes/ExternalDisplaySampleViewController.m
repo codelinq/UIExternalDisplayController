@@ -36,14 +36,14 @@
 	}
 	self.currentDimensions.text = [NSString stringWithFormat:@"%.0f x %.0f", screen.currentMode.size.width, screen.currentMode.size.height];
 	self.screenDimensions.text = [NSString stringWithFormat:@"%.0f x %.0f",externalController.maxScreenMode.size.width, externalController.maxScreenMode.size.height];
-	[externalController pushViewController:backViewController];
+	[externalController pushViewController:backViewController withAutoScale:YES];
 }
 
 #pragma mark -
 #pragma mark Do Stuff with the external Display
 -(IBAction) showDummy {
 	DummyViewController* c = [[DummyViewController alloc] initWithNibName:@"DummyViewController" bundle:[NSBundle mainBundle]];
-	[externalController pushViewController:c];
+	[externalController pushViewController:c withAutoScale:YES];
 }
 -(IBAction) hideDummy {
 	[externalController popViewController];

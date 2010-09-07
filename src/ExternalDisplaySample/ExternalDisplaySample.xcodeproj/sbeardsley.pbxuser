@@ -30,9 +30,9 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1174, 1443}}";
-			sepNavSelRange = "{1509, 0}";
-			sepNavVisRange = "{615, 670}";
+			sepNavIntBoundsRect = "{{0, 0}, {1174, 1430}}";
+			sepNavSelRange = "{1525, 0}";
+			sepNavVisRange = "{856, 1478}";
 			sepNavWindowFrame = "{{15, 102}, {809, 771}}";
 		};
 	};
@@ -47,9 +47,9 @@
 		breakpoints = (
 			EEE9C437121A008D000D1BDD /* ExternalDisplaySampleViewController.m:52 */,
 			EEE9C451121A024E000D1BDD /* ExternalDisplaySampleViewController.m:52 */,
-			EE34877F121B3EC1000F629C /* UIExternalDisplayController.m:108 */,
-			EE30D4C8121B3F8500DF16B2 /* UIExternalDisplayController.m:107 */,
-			EE30D4D2121B3FBA00DF16B2 /* UIExternalDisplayController.m:87 */,
+			EE34877F121B3EC1000F629C /* UIExternalDisplayController.m:129 */,
+			EE30D4C8121B3F8500DF16B2 /* UIExternalDisplayController.m:128 */,
+			EE30D4D2121B3FBA00DF16B2 /* UIExternalDisplayController.m:115 */,
 		);
 		codeSenseManager = EEE9C3501219E69C000D1BDD /* Code sense */;
 		executables = (
@@ -75,7 +75,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					463,
+					750,
 					20,
 					48,
 					43,
@@ -144,6 +144,16 @@
 			EE49948F12369B4200DECA20 /* PBXTextBookmark */ = EE49948F12369B4200DECA20 /* PBXTextBookmark */;
 			EE49949012369B4200DECA20 /* PBXTextBookmark */ = EE49949012369B4200DECA20 /* PBXTextBookmark */;
 			EE4994AA12369C5300DECA20 /* PBXTextBookmark */ = EE4994AA12369C5300DECA20 /* PBXTextBookmark */;
+			EE4994E21236A05400DECA20 /* PBXTextBookmark */ = EE4994E21236A05400DECA20 /* PBXTextBookmark */;
+			EE4994E31236A05400DECA20 /* PBXTextBookmark */ = EE4994E31236A05400DECA20 /* PBXTextBookmark */;
+			EE4994E51236A05400DECA20 /* PBXTextBookmark */ = EE4994E51236A05400DECA20 /* PBXTextBookmark */;
+			EE4994E61236A05400DECA20 /* PBXTextBookmark */ = EE4994E61236A05400DECA20 /* PBXTextBookmark */;
+			EE4994FC1236A0AF00DECA20 /* PBXTextBookmark */ = EE4994FC1236A0AF00DECA20 /* PBXTextBookmark */;
+			EE4995061236A2C100DECA20 /* PBXTextBookmark */ = EE4995061236A2C100DECA20 /* PBXTextBookmark */;
+			EE4995121236A31500DECA20 /* PBXTextBookmark */ = EE4995121236A31500DECA20 /* PBXTextBookmark */;
+			EE4995131236A31500DECA20 /* PBXTextBookmark */ = EE4995131236A31500DECA20 /* PBXTextBookmark */;
+			EE4995141236A31500DECA20 /* PBXTextBookmark */ = EE4995141236A31500DECA20 /* PBXTextBookmark */;
+			EE4995181236A32A00DECA20 /* PBXTextBookmark */ = EE4995181236A32A00DECA20 /* PBXTextBookmark */;
 			EEB516B6121C9D4A0029BE7C = EEB516B6121C9D4A0029BE7C /* PBXTextBookmark */;
 			EEE9C3691219E822000D1BDD = EEE9C3691219E822000D1BDD /* PBXTextBookmark */;
 			EEE9C495121A09C8000D1BDD = EEE9C495121A09C8000D1BDD /* PBXTextBookmark */;
@@ -157,7 +167,7 @@
 			sepNavWindowFrame = "{{38, 81}, {809, 771}}";
 		};
 	};
-	EE30D4C8121B3F8500DF16B2 /* UIExternalDisplayController.m:107 */ = {
+	EE30D4C8121B3F8500DF16B2 /* UIExternalDisplayController.m:128 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -167,15 +177,15 @@
 		delayBeforeContinue = 0;
 		fileReference = EEE9C503121A11EB000D1BDD /* UIExternalDisplayController.m */;
 		functionName = "-popViewController";
-		hitCount = 1;
+		hitCount = 2;
 		ignoreCount = 0;
-		lineNumber = 107;
+		lineNumber = 128;
 		location = ExternalDisplaySample;
-		modificationTime = 303777536.458408;
+		modificationTime = 305568957.209214;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	EE30D4D2121B3FBA00DF16B2 /* UIExternalDisplayController.m:87 */ = {
+	EE30D4D2121B3FBA00DF16B2 /* UIExternalDisplayController.m:115 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -185,11 +195,11 @@
 		delayBeforeContinue = 0;
 		fileReference = EEE9C503121A11EB000D1BDD /* UIExternalDisplayController.m */;
 		functionName = "-pushViewController:";
-		hitCount = 1;
+		hitCount = 2;
 		ignoreCount = 0;
-		lineNumber = 87;
+		lineNumber = 115;
 		location = ExternalDisplaySample;
-		modificationTime = 305568778.03408;
+		modificationTime = 305568911.613436;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -218,7 +228,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
 		name = "ExternalDisplaySampleViewController.m: 72";
 		rLen = 0;
-		rLoc = 2543;
+		rLoc = 2579;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 2094;
@@ -227,7 +237,7 @@
 		isa = PBXTextBookmark;
 		fRef = EEE9C503121A11EB000D1BDD /* UIExternalDisplayController.m */;
 		rLen = 0;
-		rLoc = 86;
+		rLoc = 114;
 		rType = 1;
 	};
 	EE30D53F121B471F00DF16B2 /* PBXTextBookmark */ = {
@@ -235,7 +245,7 @@
 		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
 		name = "UIExternalDisplayController.m: 88";
 		rLen = 0;
-		rLoc = 2557;
+		rLoc = 3194;
 		rType = 0;
 		vrLen = 618;
 		vrLoc = 2347;
@@ -246,6 +256,11 @@
 		name = UIExternalDisplayController.m;
 		path = /Users/sbeardsley/Work/UIExternalDisplayController/src/UIExternalDisplay/UIExternalDisplayController.m;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {641, 1924}}";
+			sepNavSelRange = "{2908, 0}";
+			sepNavVisRange = "{2667, 459}";
+		};
 	};
 	EE34876A121B3E44000F629C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -257,7 +272,7 @@
 		vrLen = 461;
 		vrLoc = 0;
 	};
-	EE34877F121B3EC1000F629C /* UIExternalDisplayController.m:108 */ = {
+	EE34877F121B3EC1000F629C /* UIExternalDisplayController.m:129 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -267,11 +282,11 @@
 		delayBeforeContinue = 0;
 		fileReference = EEE9C503121A11EB000D1BDD /* UIExternalDisplayController.m */;
 		functionName = "-popViewController";
-		hitCount = 1;
+		hitCount = 2;
 		ignoreCount = 0;
-		lineNumber = 108;
+		lineNumber = 129;
 		location = ExternalDisplaySample;
-		modificationTime = 303777545.043166;
+		modificationTime = 305568959.014188;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -337,7 +352,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
 		name = "ExternalDisplaySampleViewController.m: 38";
 		rLen = 0;
-		rLoc = 1509;
+		rLoc = 1527;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 179;
@@ -347,7 +362,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
 		name = "ExternalDisplaySampleViewController.m: 39";
 		rLen = 0;
-		rLoc = 1509;
+		rLoc = 1527;
 		rType = 0;
 		vrLen = 1562;
 		vrLoc = 615;
@@ -357,17 +372,120 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
 		name = "ExternalDisplaySampleViewController.m: 39";
 		rLen = 0;
-		rLoc = 1509;
+		rLoc = 1527;
 		rType = 0;
 		vrLen = 670;
 		vrLoc = 615;
+	};
+	EE4994E21236A05400DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
+		name = "ExternalDisplaySampleViewController.m: 39";
+		rLen = 0;
+		rLoc = 1527;
+		rType = 0;
+		vrLen = 439;
+		vrLoc = 176;
+	};
+	EE4994E31236A05400DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE4994E41236A05400DECA20 /* NSMutableArray+queue.m */;
+		name = "NSMutableArray+queue.m: 14";
+		rLen = 0;
+		rLoc = 273;
+		rType = 0;
+		vrLen = 286;
+		vrLoc = 160;
+	};
+	EE4994E41236A05400DECA20 /* NSMutableArray+queue.m */ = {
+		isa = PBXFileReference;
+		name = "NSMutableArray+queue.m";
+		path = "/Users/sbeardsley/Work/UIExternalDisplayController/src/UIExternalDisplay/NSMutableArray+queue.m";
+		sourceTree = "<absolute>";
+	};
+	EE4994E51236A05400DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
+		rLen = 0;
+		rLoc = 114;
+		rType = 1;
+	};
+	EE4994E61236A05400DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
+		name = "UIExternalDisplayController.m: 94";
+		rLen = 0;
+		rLoc = 3228;
+		rType = 0;
+		vrLen = 402;
+		vrLoc = 3014;
+	};
+	EE4994FC1236A0AF00DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
+		name = "UIExternalDisplayController.m: 95";
+		rLen = 0;
+		rLoc = 3228;
+		rType = 0;
+		vrLen = 476;
+		vrLoc = 2847;
+	};
+	EE4995061236A2C100DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
+		name = "UIExternalDisplayController.m: 115";
+		rLen = 0;
+		rLoc = 3228;
+		rType = 0;
+		vrLen = 414;
+		vrLoc = 2667;
+	};
+	EE4995121236A31500DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
+		name = "UIExternalDisplayController.m: 102";
+		rLen = 0;
+		rLoc = 2908;
+		rType = 0;
+		vrLen = 459;
+		vrLoc = 2667;
+	};
+	EE4995131236A31500DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* ExternalDisplaySampleViewController.h */;
+		name = "ExternalDisplaySampleViewController.h: 12";
+		rLen = 0;
+		rLoc = 276;
+		rType = 0;
+		vrLen = 957;
+		vrLoc = 0;
+	};
+	EE4995141236A31500DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
+		name = "ExternalDisplaySampleViewController.m: 46";
+		rLen = 0;
+		rLoc = 1802;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 1055;
+	};
+	EE4995181236A32A00DECA20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ExternalDisplaySampleViewController.m */;
+		name = "ExternalDisplaySampleViewController.m: 39";
+		rLen = 0;
+		rLoc = 1525;
+		rType = 0;
+		vrLen = 1478;
+		vrLoc = 856;
 	};
 	EEB516B6121C9D4A0029BE7C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = EE30D540121B471F00DF16B2 /* UIExternalDisplayController.m */;
 		name = "UIExternalDisplayController.m: 89";
 		rLen = 0;
-		rLoc = 2557;
+		rLoc = 3194;
 		rType = 0;
 		vrLen = 583;
 		vrLoc = 2452;
@@ -442,7 +560,7 @@
 		ignoreCount = 0;
 		lineNumber = 52;
 		location = ExternalDisplaySample;
-		modificationTime = 303777507.548614;
+		modificationTime = 305568871.159924;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -460,7 +578,7 @@
 		ignoreCount = 0;
 		lineNumber = 52;
 		location = ExternalDisplaySample;
-		modificationTime = 303777506.8565639;
+		modificationTime = 305568870.415988;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
