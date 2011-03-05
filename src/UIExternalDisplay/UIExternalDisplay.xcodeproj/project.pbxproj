@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		EE0C3076124E07C8008C0329 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0C3075124E07C8008C0329 /* MediaPlayer.framework */; };
 		EE4994D612369E9900DECA20 /* UIExternalView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4994D412369E9900DECA20 /* UIExternalView.h */; };
 		EE4994D712369E9900DECA20 /* UIExternalView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4994D512369E9900DECA20 /* UIExternalView.m */; };
 		EE99117A121B3361009712AC /* NSMutableArray+queue.h in Headers */ = {isa = PBXBuildFile; fileRef = EE991178121B3361009712AC /* NSMutableArray+queue.h */; };
@@ -23,6 +24,7 @@
 		AA747D9E0F9514B9006C5449 /* UIExternalDisplay_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalDisplay_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libUIExternalDisplay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIExternalDisplay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0C3075124E07C8008C0329 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		EE4994D412369E9900DECA20 /* UIExternalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExternalView.h; sourceTree = "<group>"; };
 		EE4994D512369E9900DECA20 /* UIExternalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExternalView.m; sourceTree = "<group>"; };
 		EE991178121B3361009712AC /* NSMutableArray+queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+queue.h"; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				EEE9C3911219EA1A000D1BDD /* UIKit.framework in Frameworks */,
+				EE0C3076124E07C8008C0329 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +74,7 @@
 			children = (
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				EEE9C3901219EA1A000D1BDD /* UIKit.framework */,
+				EE0C3075124E07C8008C0329 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,7 +150,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "UIExternalDisplay" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* UIExternalDisplay */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -213,7 +224,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};

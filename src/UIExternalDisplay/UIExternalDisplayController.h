@@ -34,6 +34,7 @@
 -(void) pushViewController:(UIViewController*) viewController;
 -(void) pushViewController:(UIViewController*) viewController withAutoScale:(bool) scale;
 -(void) popViewController;
+-(void) playVideo:(NSURL *) url;
 #pragma mark -
 #pragma mark Class Methods
 +(int) screens;

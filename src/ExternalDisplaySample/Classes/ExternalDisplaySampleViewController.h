@@ -21,7 +21,8 @@
 @property (nonatomic, retain) IBOutlet UILabel* currentDimensions;
 @property (nonatomic, retain) UIExternalDisplayController* externalController;
 
--(IBAction) showDummy;
--(IBAction) hideDummy;
+-(IBAction) showHello;
+-(IBAction) back;
+-(IBAction) playVideo;
 @end
 

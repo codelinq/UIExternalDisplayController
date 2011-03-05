@@ -8,6 +8,7 @@
 
 #import "UIExternalDisplayController.h"
 #import <UIKit/UIKit.h>
+#import <Mediaplayer/MPMoviePlayerController.h>
 
 @implementation UIExternalDisplayController
 @synthesize delegate;
@@ -23,7 +24,10 @@
 	window.hidden = NO;
 
 	[self setMaxMode];
-	[self setWindowSize];
+	if ([UIExternalDisplayController isConnected]) {
+		
+		[self setWindowSize];
+	}
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayConnect:) name:@"UIScreenDidConnectNotification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalDisplayDisconnect:) name:@"UIScreenDidDisconnectNotification" object:nil];
@@ -132,6 +136,13 @@
 -(void) popViewController {
 	UIViewController *controller = [self.queue pop];
 	[controller.view removeFromSuperview];
+}
+-(void) playVideo:(NSURL *) url{
+	MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	player.fullscreen = YES;
+	player.controlStyle = MPMovieControlStyleFullscreen;
+	[self pushViewController:player withAutoScale:YES];
+	[player play];
 }
 
 #pragma mark -

@@ -22,6 +22,7 @@
     
 	viewController.externalController = [[UIExternalDisplayController alloc] init];
 	viewController.externalController.baseView.backgroundColor = [UIColor greenColor];
+	
     // Add the view controller's view to the window and display.
     [window addSubview:viewController.view];
 	[window makeKeyAndVisible];

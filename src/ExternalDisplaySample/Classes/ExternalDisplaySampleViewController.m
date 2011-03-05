@@ -39,14 +39,17 @@
 
 #pragma mark -
 #pragma mark Do Stuff with the external Display
--(IBAction) showDummy {
+-(IBAction) showHello {
 	DummyViewController* c = [[DummyViewController alloc] initWithNibName:@"DummyViewController" bundle:[NSBundle mainBundle]];
 	[externalController pushViewController:c withAutoScale:YES];
 }
--(IBAction) hideDummy {
+-(IBAction) back {
 	[externalController popViewController];
 }
-
+-(IBAction) playVideo{
+	NSURL *moviePath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"MVI_3960" ofType:@"m4v"]];
+	[externalController playVideo:moviePath];
+}
 #pragma mark -
 
 /*
